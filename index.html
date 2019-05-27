@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      body {
+         margin: 0 auto;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         background-color: #fff;
+         color: #0f0f0f
+      }
+      .container {
+         width: 1200px;
+         margin: 0 auto;
+      }
+      /* header */
+      #header .dfc {
+         display: flex;
+         flex-direction: column;
+      }
+      #header .df {
+         display: flex;
+      }
+      #header {
+         
+      }
+      #header .nav {
+      }
+      #header .nav .line {
+         background-color: #195785;
+         padding: 35px;
+      }
+      #header .nav .nav-content {
+         justify-content: space-between;
+      }
+
+      #header .nav .nav-content .logo {
+         background-color: #195785;
+         margin: 0;
+         width: 40%;
+      }
+      #header .nav .nav-content .logo figure {
+         margin: 0 15%;
+      }
+
+      #header .nav .nav-content .header-text {
+         background-color: #fff;
+         position: relative;
+         width: 60%;
+         justify-content: center;
+      }
+      #header .nav .nav-content .header-text p {
+         /* padding: 2px 2px; */
+         background-color: #bee3f5;
+         /* margin-top: 30px;
+         margin-right: 160px;
+         font-size: 15px; */
+         
+         letter-spacing: 3px;
+         padding: 0 20px;
+         font-size: 38px;
+         margin: 0;
+         margin-right: 60px;
+         line-height: 71px;
+         margin-top: 13px;
+      }
+      #header .nav .nav-content .header-text span {
+         -webkit-clip-path: polygon(0 0, 0% 100%, 5% 0);
+         clip-path: polygon(0 0, 0% 100%, 5% 0);
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         background-color: #195785;
+         margin-left: -1px;
+      }
+      /* description */
+      #description {
+         position: relative;
+         margin-top: 120px;
+      }
+      #description .description-text {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 48%;
+         text-align: right;
+         background-color: #195785;
+         color: #fff;
+         font-size: 20px;
+         padding: 5px;
+         box-shadow: -10px 5px #3c80b2;
+
+         margin-top: -60px;
+      }
+      #description .container {
+         display: flex;
+      }
+      #description .block {
+         width: 50%;
+      }
+
+      #description .block figure {
+         margin: 0;
+         
+      }
+
+      #description .block figure img {
+         max-width: 500px;
+         width: 100%;
+      }
+      #description .block p {
+         margin-top: 30px;
+      }
+
+      #description .block p span {
+         background-color: #bee3f5;
+         padding: 4px 8px;
+      }
+      /* features */
+      #features {
+         position: relative;
+      }
+      #features .features-text {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 48%;
+         text-align: right;
+         background-color: #195785;
+         color: #fff;
+         font-size: 20px;
+         padding: 5px;
+         box-shadow: -10px 5px #3c80b2;
+
+         margin-top: -60px;
+      }
+      #features .block-content {
+         display: flex;
+         margin-top: 160px;
+         font-size: 17px;
+      }
+      #features .block-content .block-left {
+         margin-top: 60px;
+      }
+      #features .block-content .block-left figure {
+         margin: 16px 5px;
+      }
+      #features .block-content .block-right {
+         margin-left: 10%;
+      }
+      #features .block-content .block-right figure {
+         margin: 16px 5px;
+      }
+      #features .block-content .block {
+         display: flex;
+         align-items: center;
+      }
+
+      /* footer */
+      #footer .box{
+         display: flex;
+         align-items: flex-end;
+         justify-content: space-around;
+      }
+      #footer{
+        position: relative;
+        padding: 50px 0px 0 0;
+        font-size: 20px;
+      }
+      #footer .box .block-img img{
+         width: 280px;
+      }
+      #footer .block-text p{
+         margin: 0;
+         font-size: 17px;
+         letter-spacing: 1px;
+         line-height: 20px;
+      }
+      #footer .block-address{
+         border-left: 4px solid #195785;
+         margin: 10px;
+         padding-left: 10px;
+      }
+      #footer .block{
+         margin: 10px;
+      }
+      #footer .block-address a{
+         color: #0f0f0f
+      }
+      #footer .block-address span{
+         color: #195785;
+      }
+      #footer .footer-text {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 40%;
+         text-align: right;
+         background-color: #195785;
+         color: #fff;
+         font-size: 20px;
+         padding: 5px;
+         box-shadow: -10px 5px #3c80b2
+      }
+
+   </style>
+</head>
+<body>
+   <header id="header">
+      <div class="nav dfc">
+         <div class="line"></div>
+         <div class="nav-content df ">
+            <div class="logo">
+               <figure>
+                  <img src="src/img/header/logo/Slice_5.png" alt="logo">
+               </figure>
+            </div>
+            <div class="header-text df">
+               <span></span>
+               <p>
+                  <b>FES</b>
+               </p>
+               <p>
+                  FUEL ECO SAVER
+               </p>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section id="description">
+      <div class="description-text">
+         Description
+      </div>
+      <div class="container">
+         <div class="block">
+            <figure>
+               <img src="src/img/description/2.jpg" alt="">
+            </figure>
+         </div>
+         <div class="block">
+            <p>
+               <span>
+                  FES is suited to both engines and boilers.
+               </span>
+            </p>
+            <p>
+               FES provides for a fuel economy of around 5% for more modern engines in good state, 
+               whilst usually delivering even better figures for older engines. In the case of boilers, 
+               the economy gain normally averages around 10%.
+            </p>
+            <p>
+               Additionally, FES is able to reduce emissions (CO, NOx) by about 20%, while at the same 
+               time lowering engine maintenance and component costs by at least 20%.
+            </p>
+            <p>
+               FES represents the latest development in fuel oil treatment, acting as a 
+               combustion enhancer, carbon catalyst and also a smoke suppressant in two- and four- 
+               stroke engines and boilers. It can be used equally well with both diesel and heavy fuel.
+            </p>
+         </div>
+      </div>
+   </section>
+   <section id="features">
+      <div class="features-text">
+         Features
+      </div>
+      <div class="block-content">
+         <!-- block-1 -->
+         <div class="block-left">
+            <div class="block">
+               <figure>
+                  <img src="src/img/features/Slice_blue.png" alt="">
+               </figure>
+               <div class="block-text">
+                  Increased combustion efficiency.
+               </div>
+            </div>
+            <div class="block">
+               <figure>
+                  <img src="src/img/features/Slice_blue.png" alt="">
+               </figure>
+               <div class="block-text">
+                  Reduced smoke emissions.
+               </div>
+            </div>
+            <div class="block">
+               <figure>
+                  <img src="src/img/features/Slice_red.png" alt="">
+               </figure>
+               <div class="block-text">
+                  Compact.
+               </div>
+            </div>
+         </div>
+         <!-- block-2 -->
+         <div class="block-right">
+               <div class="block">
+                  <figure>
+                     <img src="src/img/features/Slice_red.png" alt="">
+                  </figure>
+                  <div class="block-text">
+                     Unstable fuel stabilization.
+                  </div>
+               </div>
+               <div class="block">
+                  <figure>
+                     <img src="src/img/features/Slice_blue.png" alt="">
+                  </figure>
+                  <div class="block-text">
+                     No more combustion deposits.
+                  </div>
+               </div>
+               <div class="block">
+                  <figure>
+                     <img src="src/img/features/Slice_blue.png" alt="">
+                  </figure>
+                  <div class="block-text">
+                     Keeps surfaces clean, reducing deposit formations.
+                  </div>
+               </div>
+               <div class="block">
+                  <figure>
+                     <img src="src/img/features/Slice_red.png" alt="">
+                  </figure>
+                  <div class="block-text">
+                     Payback period of less than one year.
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+   <footer id="footer">
+      <div class="footer-text">
+         Technical Data
+      </div>
+      <div class="container">
+         <div class="box">
+            <div class="block">
+               <div class="block-text">
+                  <p>
+                     Working pressure: 0-30 bar <br>
+                     Power supply: 24V DC <br>
+                     Current: 0.2A<br>
+                     Dimensions, mm: <br>
+                     A = 440, B = 60, — = 80,<br> 
+                     D = 40, E = 120, F = 40<br>
+                     Weight: 3.7 kg
+                  </p>
+               </div>
+            </div>
+            <div class="block">
+               <div class="block-img">
+                  <img src="src/img/footer/fes_3.jpg" alt="">
+               </div>
+            </div>
+            <div class="block">
+               <div class="block-address">
+                  <span>tax:</span> <a href="tel:+44(0)8703167797">+44 (0) 870 316 7797</a> <br>
+                  <span>www.</span> <a href="akritengineering.com">akritengineering.com</a> <br>
+                  <span>e-mail:</span> <a href="email:info@akritengineerin.com">info</a> <br>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>
